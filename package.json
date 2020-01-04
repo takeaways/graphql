@@ -1,0 +1,29 @@
+{
+  "name": "movie_graph",
+  "version": "1.0.0",
+  "description": "- npm install graphql-yaga\r - /users/ GET 으로 원하는 값만 리턴 하지 못하는 단점이 있다. (over-fetching)\r - 그러나 그래프 큐엘을 사용한다면 필요한 정보만을 받아 올 수있다.\r - 하나의 프로그램을 위해서 여러번의 rest-api 콜을 요청하는 것이다. (under-fetching)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomadGeonilJang/graphql.git"
+  },
+  "author": "GeonilJang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nomadGeonilJang/graphql/issues"
+  },
+  "homepage": "https://github.com/nomadGeonilJang/graphql#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-node": "0.0.1-security",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1"
+  }
+}
