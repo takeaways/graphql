@@ -31,7 +31,7 @@ export const getById = id => {
   return person[0];
 };
 
-const movies = [
+let movies = [
   {
     id: '1',
     name: 'G1',
@@ -67,7 +67,7 @@ export const getMovieById = id => {
 export const delMovie = id => {
   const cleaned = movies.filter(m => m.id !== String(id));
   if (movies.length > cleaned.length) {
-    movie = cleaned;
+    movies = cleaned;
     return true;
   }
   return false;
